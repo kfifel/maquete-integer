@@ -64,7 +64,9 @@ form{
 }
 .introSection div div span::before{
     content : url("../images/Checkmark.png");
-    transform-origin: 2px center;
+    position: relative;
+    top: .3rem;
+    right: .4rem;
 }
 .imageTiltle img{
     height:26rem;
@@ -160,6 +162,9 @@ h1{
     margin-top: 1rem;
     list-style: none;
 }
+.transparentPricingCard ul li{
+    margin-bottom: 10px;
+}
 .transparentPricingCard button, .transparentPricingCardWithImage button{
     margin-top: 1rem;
 }
@@ -179,6 +184,7 @@ h1{
 }
 .transparentPricingCardWithImage img{
     width: 90%;
+    height: 60%;
     margin: 1rem auto;
 }
 .transparentPricingCardWithImage{
@@ -186,8 +192,8 @@ h1{
     border: 1px solid black;
     background-color: linen;
 }
-.transparentPricingCard label{
-
+.transparentPricingCardWithImage p{
+    color: #b0afaf;
 }
 .transparentPricingCard h4{
     background-color: #13366d;
@@ -228,3 +234,30 @@ footer{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+@media screen and (max-width: 990px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .transparentPricingCard label{
+        font-size: 1.5rem;
+    }
+    .transparentPricingCard, .transparentPricingCardWithImage{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .transparentPricing:nth-child(3){
+        margin-right: 4%;
+        background-color: red
+    }
+    .transparentPricing{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 830px) {
+    h1{
+        font-size: 2rem;
+    }
+
+}
+
