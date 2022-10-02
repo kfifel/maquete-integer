@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", "Courier New", monospace;
+}
+body{
+    padding: 2% 5% 0 5%;
+    background-color: linen;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    color: black;
+    font-weight: bold;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    justify-content: space-between;
+}
+.navbar ul li+li{
+    margin-left: 2rem;
+}
+main{
+    margin-top: .5rem;
+}
+.introSection div{
+    display : flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.introSection {
+    display:flex
+}
+.selverText {
+    color: #b1b0ae;
+    margin-top: 1rem;
+}
+form{
+    margin-top: 1rem;
+}
+.introSection div{
+    width: 50%;
+}
+.introSection .imageTiltle{
+    width: 50%;
+}
+.introSection div div{
+    width: 100%;
+    display: inline-block;
+    color: #b1b0ae;
+    font-size:.8rem;
+    margin-top: 1rem;
+}
+.introSection div div span+span{
+    margin-left: 1rem;
+}
+.introSection div div span::before{
+    content : url("../images/Checkmark.png");
+    transform-origin: 2px center;
+}
+.imageTiltle img{
+    height:26rem;
+    width:100%;
+}
+.secondSection{
+    margin-top: 2rem;
+}
+.secondSection article p{
+    color: #b0afaf;
+    margin-bottom: 2rem;
+}
+
+.card{
+    margin-top: 2rem;
+}
+.card article{
+    background-color: white;
+    width: 22%;
+    padding: .7rem;
+    border: 1px solid #b0afaf;
+    border-radius: 2%;
+}
+.card article p{
+    margin-top: .7rem;
+    color: #b0afaf;
+}
+strong{
+    color: black;
+}
+.card article+article{
+    margin-left:4%;
+}
+h1{
+    color: #13366d;
+    font-size : 3rem;
+    font-weight : bold;
+}
+.card{
+    display: flex;
+}
+.transparentPricing{
+    display: flex;
+}
+.signeInButton{
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: linen;
+}
+.signeInButton:hover{
+    padding: .45rem;
+    border: 1px solid #597bbd;
+    border-radius: 5px;
+    background-color: forestgreen;
+    opacity: 0.5;
+    color: white;
+}
+.emailInput{
+    padding: .4rem;
+    border-radius: 5px;
+    border: 1px solid #4b4b4b;
+}
+.tryForFreeButton{
+    background-color: #0c459e;
+    padding: .5rem;
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+.tryForFreeButton:hover{
+    cursor: pointer;
+    background-color: #597bbd;
+    padding: .5rem;
+    border: 1px solid linen;
+    border-radius: 5px;
+    color: white;
+}
+.transparentPricingCard, .transparentPricingCardWithImage{
+    background-color: #fff3d9;
+    border: 1px solid #b0afaf;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 20rem;
+    width: 22%;
+}
+.transparentPricingCard + .transparentPricingCard, .transparentPricingCard + .transparentPricingCardWithImage{
+    margin-left: 4%;
+}
+.transparentPricingCard ul, .transparentPricingCardWithImage ul{
+    margin-top: 1rem;
+    list-style: none;
+}
+.transparentPricingCard button, .transparentPricingCardWithImage button{
+    margin-top: 1rem;
+}
+.transparentPricingCard p{
+    margin-top: 1rem;
+}
+.transparentPricingCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.transparentPricingCard label{
+    color: #000000;
+    font-weight: bold;
+    font-size: 2rem;
+    bottom: 0;
+}
+.transparentPricingCardWithImage img{
+    width: 90%;
+    margin: 1rem auto;
+}
+.transparentPricingCardWithImage{
+    height: 75%;
+    border: 1px solid black;
+    background-color: linen;
+}
+.transparentPricingCard label{
+
+}
+.transparentPricingCard h4{
+    background-color: #13366d;
+    color: white;
+    border-radius: 20px;
+    width: 110px;
+    padding: 5px;
+    text-align: center;
+
+}
+.btnBlue{
+    border: 1px solid #0c459e;
+    border-radius: 5px;
+    color: #0c459e;
+    background-color: #fff3d9;
+    padding: .5rem;
+}
+
+.btnBlue:hover {
+    border: 1px solid white;
+    background-color: #0c459e;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    mso-border-shadow: yes;
+}
+.transparentPricingCard ul li::before{
+    content: " 👉";
+}
+label span{
+    color: #8d8d8d;
+}
+footer span{
+    color: #13366d;
+    font-weight: bold;
+}
+footer{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
